@@ -65,7 +65,7 @@ class Subscription(models.Model):
     field_a = models.CharField(max_length=250, default='')
     field_b = models.CharField(max_length=250, default='')
 
-    # create class Meta for 2 some fields for index
+    # create class Meta for 2 some fields with index
     class Meta:
         indexes = [
             models.Index(fields=['field_a', 'field_b'])
